@@ -2,8 +2,8 @@
 
 this is so revolutionary
 
-| App     | Javascript         | Python             | Java               | Note                  |
-|---------|--------------------|--------------------|--------------------|-----------------------|
-| Discord | Node JS            | :white_check_mark: | :white_check_mark: | Discord Status        |
-| Twitter | Chrome             | :x:                | :x:                | Twitter Post          |
-| Github | :x:                | :white_check_mark: | :x:                | markdown file content |
+| App     | Javascript         | Python             | Java               | Go      | Note                  |
+|---------|--------------------|--------------------|--------------------| :x:     |-----------------------|
+| Discord | Node JS            | :white_check_mark: | :white_check_mark: | :x:     | Discord Status        |
+| Twitter | Chrome             | :x:                | :x:                | :x:     | Twitter Post          |
+| Github  | :x:                | :white_check_mark: | :x:                | :x:     | markdown file content |
