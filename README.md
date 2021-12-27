@@ -1,6 +1,8 @@
 # SayFuckInEveryApp
 
-this is so revolutionary
+this is so revolutionary\
+\
+feel free to contribute it and make a pr but dont change the README.md\
 
 | App     | Javascript         | Python             | Java               | Go                 | Note                  |
 |---------|--------------------|--------------------|--------------------|--------------------|-----------------------|
