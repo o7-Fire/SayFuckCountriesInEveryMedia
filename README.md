@@ -6,7 +6,7 @@ feel free to contribute it and make a pr but dont change the README.md
 
 # Extra Info
 
-matrix = discord ripoff (https://element.io/)
+matrix = discord ripoff (https://matrix.org/)
 
 | App     | Javascript         | Python             | Java               | Go                 | Note                  |
 |---------|--------------------|--------------------|--------------------|--------------------|-----------------------|
