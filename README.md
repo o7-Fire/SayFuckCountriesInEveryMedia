@@ -10,7 +10,7 @@ don't commit library, cache, or anything else that is not important e.g. `node_m
 
 matrix = discord ripoff (https://matrix.org/)
 
-| App     | Javascript         | Python             | Java               | Go                  | Rust               | Note                                                             |
+| Media   | Javascript         | Python             | Java               | Go                  | Rust               | Note                                                             |
 |---------|--------------------|--------------------|--------------------|---------------------|--------------------|------------------------------------------------------------------|
 | Discord | Node JS            | :white_check_mark: | :white_check_mark: | Discord Bot Command | :white_check_mark: | (Discord User Status/Discord Bot) changes between Fuck {Country} |
 | Matrix  | :x:                | :x:                | :x:                | :x:                 | :x:                | User Status changes between Fuck {Country}                       |
