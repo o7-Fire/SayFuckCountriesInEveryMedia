@@ -1,4 +1,4 @@
-# https://github.com/Azoy/Sword
+// https://github.com/Azoy/Sword
 
 import Sword
 
