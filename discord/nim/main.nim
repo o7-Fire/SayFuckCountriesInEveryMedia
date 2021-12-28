@@ -10,8 +10,10 @@ if len(token) < 50:
     print("Invalid token")
     exit(1)
 
+#how lol
 let countries: seq[string] = splitLines(strip(readFile("../../countries.txt")))
 for i, c in countries:
   echo(i, ": ", c)
 
 
+#http request here
