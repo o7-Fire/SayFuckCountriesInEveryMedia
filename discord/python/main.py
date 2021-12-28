@@ -14,7 +14,7 @@ headers = {
     "x-discord-locale": "en-US",
     "x-super-properties": "" #your x-super-properties
 }
-countries = open("countries.txt", "r").read().split("\n")
+countries = open("../../countries.txt", "r").read().split("\n")
 while True:
 	for country in countries:
 		#finalmessage = f"Fuck {random.choice(countries)}"
