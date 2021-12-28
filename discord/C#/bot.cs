@@ -43,7 +43,7 @@ namespace i_wanna_die
                     var random = new Random();
                     foreach (string line in System.IO.File.ReadLines("../../countries.txt")) ;
                     int index = random.Next(line.Count);
-                    await message.channel.sendmessage(list[index]);
+                    await message.channel.sendmessage("Fuck " + list[index]);
                 }
             }
         }
