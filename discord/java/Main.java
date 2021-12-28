@@ -14,9 +14,12 @@ public class Main {
             System.out.println("Usage: java Main <token>");
             System.exit(1);
         }
-        File countriesFile = new File("countries.txt");
+        File countriesFile = new File("../../countries.txt");
         if (!countriesFile.exists()) {
-            countriesFile = new File("discord/java/countries.txt");
+            countriesFile = new File("countries.txt");
+        }
+        if (!countriesFile.exists()) {
+            System.out.println("Could not find: " + countriesFile.getAbsolutePath());
         }
         List<String> countries = Files.readAllLines(countriesFile.toPath());
         String xSuperProperties = "{\"os\":\"Windows\",\"browser\":\"Discord Client\",\"release_channel\":\"ptb\",\"client_version\":\"1.0.1011\",\"os_version\":\"10.0.19042\",\"os_arch\":\"x64\",\"system_locale\":\"en-US\",\"client_build_number\":108924,\"client_event_source\":null}";
