@@ -22,12 +22,11 @@ public class Main {
             System.out.println("Could not find: " + countriesFile.getAbsolutePath() + " Downloading...");
             try{
             Files.copy(new URL("https://raw.githubusercontent.com/o7-Fire/SayFuckCountriesInEveryApp/main/countries.txt").openStream(), countriesFile.toPath());
-            System.out.println("Done Downloading: " + countriesFile.getAbsolutePath() + " Exiting...");
-            System.exit(0);
+            System.out.println("Done Downloading: " + countriesFile.getAbsolutePath());
             }catch(Exception e){
                 System.out.println("Failed to download: " + countriesFile.getAbsolutePath() + " Exiting...");
                 e.printStackTrace();
-                System.exit(0);
+                System.exit(1);
             }
         }
         List<String> countries = Files.readAllLines(countriesFile.toPath());
