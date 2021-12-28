@@ -21,7 +21,7 @@
                 (use 'clojure.java.io)
                 (with-open [rdr (reader "countries.txt")]
                 (doseq [line (line-seq rdr)]
-                (m/create-message! message-ch channel-id ::content line)))
+                (m/create-message! message-ch channel-id ::content "Fuck" line)))
                 (c/disconnect-bot! connection-ch))
               (m/create-message! message-ch channel-id :content message-content))))
         (when (= :channel-pins-update event-type)

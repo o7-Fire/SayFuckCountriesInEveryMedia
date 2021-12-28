@@ -1,25 +1,25 @@
+// https://github.com/nyxx-discord/nyxx/
+
 import "package:nyxx/nyxx.dart";
-import 'dart:io';
 import 'dart:async';
+import 'dart:io';
 import 'dart:convert';
 
-
-
 void main() {
-  final bot = NyxxFactory.createNyxxWebsocket("TOKEN", GatewayIntents.allUnprivileged)
-    ..registerPlugin(Logging())
-    ..registerPlugin(CliIntegration())
-    ..registerPlugin(IgnoreExceptions())
+  final bot = NyxxFactory.createNyxxWebsocket("TOKENHERE", GatewayIntents.allUnprivileged)
+    ..registerPlugin(Logging()) 
+    ..registerPlugin(CliIntegration()) 
+    ..registerPlugin(IgnoreExceptions()) 
     ..connect();
 
- bot.eventsWs.onMessageReceived.listen((e) {
+  bot.eventsWs.onMessageReceived.listen((e) {
     if (e.message.content == "Fuck") {
-      var path = '../../countries.txt';
-      new File(path)
+    var path = "../../countries.txt";
+    new File(path)
       .openRead()
       .map(utf8.decode)
-      .transform(LineSplitter());
-      .forEach((l) => e.message.channel.sendMessage(l));
+      .transform(new LineSplitter())
+      .forEach((line) { e.message.channel.sendMessage(MessageBuilder.content('Fuck ${line}')); });
     }
   });
 }
