@@ -6,6 +6,8 @@ feel free to contribute it and make a pr but dont change the README.md
 
 # Extra Info
 
+don't commit library, cache, or anything else that is not important e.g. `node_module`, `output`, `build`, `cache`
+
 matrix = discord ripoff (https://matrix.org/)
 
 | App     | Javascript         | Python             | Java               | Go                  | Rust               | Note                                                             |
