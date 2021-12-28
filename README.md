@@ -10,11 +10,11 @@ don't commit library, cache, or anything else that is not important e.g. `node_m
 
 matrix = discord ripoff (https://matrix.org/)
 
-| Media   | Javascript         | Python             | Java               | Go                 | Rust               | C#                 | CPP                | Note                                                             |
-|---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|------------------------------------------------------------------|
-| Discord | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | (Discord User Status/Discord Bot) changes between Fuck {Country} |
-| Matrix  | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | User Status changes between Fuck {Country}                       |
-| Twitter | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | Twitter Post Tweet about Fuck {Country}                          |
-| Github  | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | markdown file content                                            |
-| Kahoot  | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | Fill server with bots named Fuck {Country}                       |
-| STDOUT  | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |                                                                  |
+| Media   | Javascript         | Python             | Java               | Go                 | Rust               | C#                 | C++                | Note                                                                   |
+|---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|------------------------------------------------------------------------|
+| Discord | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | (Discord User Status/Discord Bot) changes between Fuck {Country}       |
+| Matrix  | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | User Status changes between Fuck {Country}                             |
+| Twitter | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | Twitter Post Tweet about Fuck {Country}                                |
+| Github  | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | markdown file content                                                  |
+| Kahoot  | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | Fill server with bots named Fuck {Country}                             |
+| STDOUT  | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | Standard output is a stream to which a program writes its output data. |                                                         |
