@@ -1,0 +1,4 @@
+dependencies:
+  twitter-crystal:
+    github: sferik/twitter-crystal
+    version: ~> 0.2.1
