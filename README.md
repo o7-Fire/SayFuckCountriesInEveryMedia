@@ -1,14 +1,12 @@
 # SayFuckCountriesInEveryApp
 
-this is so revolutionary\
-\
-feel free to contribute it and make a pr but dont change the README.md
+this is so revolutionary
+
+feel free to contribute it and make a pr but do change the README.md
 
 # Extra Info
 
 don't commit library, cache, or anything else that is not important e.g. `node_module`, `output`, `build`, `cache`
-
-matrix = discord ripoff (https://matrix.org/)
 
 | Media   | Javascript         | Python             | Java               | Go                 | Rust               | C#                 | C++                | Note                                                                   |
 |---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|------------------------------------------------------------------------|
