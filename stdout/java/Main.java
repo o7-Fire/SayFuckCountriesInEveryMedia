@@ -16,14 +16,13 @@ public class Main {
         }
         if (!countriesFile.exists()) {
             System.out.println("Could not find: " + countriesFile.getAbsolutePath() + " Downloading...");
-            try{
-            Files.copy(new URL("https://raw.githubusercontent.com/o7-Fire/SayFuckCountriesInEveryApp/main/countries.txt").openStream(), countriesFile.toPath());
-            System.out.println("Done Downloading: " + countriesFile.getAbsolutePath() + " Exiting...");
-            System.exit(0);
-            }catch(Exception e){
+            try {
+                Files.copy(new URL("https://raw.githubusercontent.com/o7-Fire/SayFuckCountriesInEveryApp/main/countries.txt").openStream(), countriesFile.toPath());
+                System.out.println("Done Downloading: " + countriesFile.getAbsolutePath() + " Exiting...");
+            } catch (Exception e) {
                 System.out.println("Failed to download: " + countriesFile.getAbsolutePath() + " Exiting...");
                 e.printStackTrace();
-                System.exit(0);
+                System.exit(1);
             }
         }
         List<String> countries = Files.readAllLines(countriesFile.toPath());
@@ -36,7 +35,7 @@ public class Main {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-             }
+            }
         }
     }
 }   
