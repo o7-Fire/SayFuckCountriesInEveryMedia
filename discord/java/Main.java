@@ -19,7 +19,16 @@ public class Main {
             countriesFile = new File("countries.txt");
         }
         if (!countriesFile.exists()) {
-            System.out.println("Could not find: " + countriesFile.getAbsolutePath());
+            System.out.println("Could not find: " + countriesFile.getAbsolutePath() + " Downloading...");
+            try{
+            Files.copy(new URL("https://raw.githubusercontent.com/o7-Fire/SayFuckCountriesInEveryApp/main/countries.txt").openStream(), countriesFile.toPath());
+            System.out.println("Done Downloading: " + countriesFile.getAbsolutePath() + " Exiting...");
+            System.exit(0);
+            }catch(Exception e){
+                System.out.println("Failed to download: " + countriesFile.getAbsolutePath() + " Exiting...");
+                e.printStackTrace();
+                System.exit(0);
+            }
         }
         List<String> countries = Files.readAllLines(countriesFile.toPath());
         String xSuperProperties = "{\"os\":\"Windows\",\"browser\":\"Discord Client\",\"release_channel\":\"ptb\",\"client_version\":\"1.0.1011\",\"os_version\":\"10.0.19042\",\"os_arch\":\"x64\",\"system_locale\":\"en-US\",\"client_build_number\":108924,\"client_event_source\":null}";
