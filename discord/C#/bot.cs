@@ -1,51 +1,45 @@
 using System;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Discord;
-using Discord.WebSocket;
-using System.Collections.Generic;
+using DSharpPlus;
 
-
-namespace i_wanna_die
+namespace SayFuckCountriesInEveryMedia
 {
     class Program
     {
-        private readonly DiscordSocketClient _client;
         static void Main(string[] args)
         {
-            new Program().MainAsync().GetAwaiter().GetResult();
+            MainAsync().GetAwaiter().GetResult();
         }
 
-        public Program()
+        static async Task MainAsync()
         {
-            _client = new DiscordSocketClient();
-
-            _client.Log += LogAsync;
-            _client.Ready += ReadyAsync;
-            _client.MessageReceived += MessageReceivedAsync;
-        }
-
-        public async Task MainAsync()
-        {
-            await _client.LoginAsync(TokenType.Bot, Environment.GetEnvironmentVariable("token"));
-            await _client.StartAsync();
-
-            await Task.Delay(Timeout.Infinite);
-        }
-
-        private async Task MessageReceivedAsync(SocketMessage message)
-        {
-            if (message.Content == "Fuck")
+            var discord = new DiscordClient(new DiscordConfiguration()
             {
-                int counter = 0;
-                static void Main(string[] args)
+                Token = "TOKEN",
+                TokenType = TokenType.Bot
+            });
+
+            discord.MessageCreated += async (s, e) =>
+            {
+                if (e.Message.Content.ToLower().StartsWith("Fuck"))
                 {
-                    var random = new Random();
-                    foreach (string line in System.IO.File.ReadLines("../../countries.txt")) ;
-                    int index = random.Next(line.Count);
-                    await message.channel.sendmessage("Fuck " + list[index]);
+                    const string Path = @"countries.txt";
+                    string[] lines = File.ReadAllLines(path: Path);
+                    foreach (string line in lines)
+                    await e.Message.RespondAsync(line);
+                    Thread.Sleep(4000);
                 }
-            }
+            };
+
+            await discord.ConnectAsync();
+            await Task.Delay(-1);
         }
     }
 }
+
+
+
+
+
