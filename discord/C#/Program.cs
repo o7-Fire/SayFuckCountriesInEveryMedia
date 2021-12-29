@@ -17,7 +17,7 @@ namespace SayFuckCountriesInEveryMedia
         {
             var discord = new DiscordClient(new DiscordConfiguration()
             {
-                Token = "ODk0Nzk4NDI0MzI1NjQwMjAy.YVvP-A.jMtLQBRnaPwuudlhjtapDJmmKBU",
+                Token = "TOKEN",
                 TokenType = TokenType.Bot
             });
 
