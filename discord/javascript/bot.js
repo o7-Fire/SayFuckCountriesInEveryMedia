@@ -3,7 +3,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 client.on('message', message => {
-    if (message.content === '+ping') {  
+    if (message.content === 'Fuck') {  
         const fileStream = fs.createReadStream('countries.txt');
         const rl = readline.createInterface({ input: fileStream });
         rl.on('line', line => {
