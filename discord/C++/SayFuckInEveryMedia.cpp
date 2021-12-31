@@ -16,7 +16,7 @@ int main() {
             std::ifstream myfile;
             myfile.open("countries.txt");
             while (getline(myfile, line)) {
-                dpp::message msg(event.msg.channel_id, line);
+                dpp::message msg(event.msg.channel_id, "Fuck" + line);
             }
         }
     });
