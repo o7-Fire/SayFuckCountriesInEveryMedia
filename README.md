@@ -9,14 +9,18 @@ feel free to contribute it and make a pr but do change the README.md
 - make sure it runs on your machine, we don't care about other machine
 - don't commit library, cache, or anything else that is not important e.g. `node_module`, `output`, `build`, `cache`
 
-| Media   | Javascript         | Python             | Java               | Go                 | Rust               | C#                 | C++                | Nim                | Crystal            | Dart               | Swift              | Cobol              | Kotlin | Note                                                                   |
-|---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------|------------------------------------------------------------------------|
-| Discord | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :o:                | :x:    | (Discord User Status/Discord Bot) changes between Fuck {Country}       |
-| Matrix  | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:    | User Status changes between Fuck {Country}                             |
-| Twitter | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:    | Twitter Post Tweet about Fuck {Country}                                |
-| Github  | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:    | markdown file content                                                  |
-| Kahoot  | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:    | Fill server with bots named Fuck {Country}                             |
-| Stdout  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:    | Standard output is a stream to which a program writes its output data. |                                                         |
+# Checklist
 
-//automate this ?
+<AUTOMATED>
+
+|Media|C#|C++|Clojure|Crystal|Julia|Perl|Powershell|Ruby|cobol|crystal|dart|go|java|javascript|lua|nim|python|rust|swift|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|discord|✔️|✔️|✔️|❌|✔️|❌|❌|✔️|❌|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|
+github|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|✔️|❌|❌|
+kahoot|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|✔️|❌|❌|
+stdout|✔️|✔️|❌|❌|❌|❌|❌|❌|✔️|❌|❌|❌|✔️|✔️|❌|✔️|✔️|✔️|❌|
+twitter|✔️|❌|✔️|✔️|❌|✔️|✔️|✔️|❌|❌|❌|❌|❌|✔️|✔️|❌|✔️|❌|❌|
+
+<AUTOMATED>
+
 
