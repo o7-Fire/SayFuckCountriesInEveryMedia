@@ -1,11 +1,10 @@
 import os
-import re
 from pathlib import Path
 from typing import List
 
 readmeFile = Path("README.md")
 orig = readmeFile.read_text()
-ctx = orig
+ctx = str(orig)
 finishedC = ":heavy_check_mark:"
 noneC = ":x:"
 
@@ -37,6 +36,8 @@ def getMatrix(folders: List[str]) -> dict:
         langs = getLanguageList(folder)
         language.update(langs)
 
+    language = list(language)
+    language.sort()
     for lang in language:
         matrix[lang] = []
         for folder in folders:
@@ -80,7 +81,9 @@ def buildTable(matrix: dict) -> str:
 
 mat = getMatrix(getMediaList())
 table = buildTable(mat)
-ctx = re.sub(r'<AUTOMATED>.+</AUTOMATED>', '<AUTOMATED>\n' + table + '\n</AUTOMATED>', ctx)  # regex broken
+ctx = ctx.split("<script>\n")  # this is retarded
+ctx[1] = table + "\n" + "</script>"
+ctx = "<script>\n\n".join(ctx)
 if ctx != orig:
     readmeFile.write_text(ctx, 'utf-8')
     print('TABLE GENERATED')
