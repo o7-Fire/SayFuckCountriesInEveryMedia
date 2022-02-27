@@ -19,12 +19,13 @@ feel free to contribute it and make a pr but do change the README.md
 
 <AUTOMATED>
 
-Media|C#|C++|Clojure|Cobol|Crystal|Crystal|Dart|Go|Java|Javascript|Julia|Lua|Nim|Perl|Powershell|Python|Ruby|Rust|Swift
--|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
-Discord|✔️|✔️|✔️|❌|❌|❌|❌|❌|❌|❌|✔️|❌|❌|❌|❌|❌|✔️|❌|❌
-Github|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌
-Kahoot|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌
-Stdout|✔️|✔️|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌
-Twitter|✔️|❌|✔️|❌|✔️|✔️|❌|❌|❌|❌|❌|❌|❌|✔️|✔️|❌|✔️|❌|❌
+| media   | go                 | java               | dart               | swift              | Clojure            | python             | rust               | Perl               | C++                | Crystal            | lua                | nim                | javascript         | cobol              | Julia              | Powershell         | crystal            | C#                 | Ruby               |
+|---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| discord | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| github  | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| kahoot  | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| stdout  | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
+| twitter | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: |
 
 </AUTOMATED>
+
