@@ -6,6 +6,8 @@ declare -A ALS
 # List medias
 _PS=( $(find * -maxdepth 0 -type d) )
 echo "${#_PS[@]} MEDIA(S) FOUND:"
+mapfile -d '' _PS < <(
+    printf '%s\0' "${_PS[@]}" | sort -z)
 echo ${_PS[@]^^}
 echo
 for P in ${_PS[@]}
@@ -54,8 +56,9 @@ do
         # Check if language in media
         if [[ ${APS[$P]} == *" $L "* ]] 
         then
-            IMPC=$(shopt -s nocaseglob && 
-                cd $P && cd $L && ls)
+            A=$(find * -iname "${P,,}")
+            B=$(cd $A && find * -iname "${L,,}")
+            IMPC=$(cd "./$A/$B" && ls)
             # Check if developers are useless
             if [[ $IMPC == *"IMPOSSIBLE.txt"* ]]
             then

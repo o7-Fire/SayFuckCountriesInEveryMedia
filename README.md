@@ -24,10 +24,10 @@ feel free to contribute it and make a PR
 
 | Media | C# | C++ | Clojure | Cobol | Crystal | Dart | Go | Java | Javascript | Julia | Lua | Nim | Perl | Powershell | Python | Ruby | Rust | Swift |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X | X |
 | Discord | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | X | ✓ | ✓ | ✓ | ✓ |
-| Twitter | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 | Stdout | ✓ | ✓ | X | ✓ | X | X | X | ✓ | ✓ | X | X | ✓ | X | X | ✓ | X | ✓ | X |
 | Github | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X | X |
+| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X | X |
+| Twitter | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 
 </GENERATED>
