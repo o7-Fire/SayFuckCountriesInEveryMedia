@@ -28,7 +28,7 @@ def getLanguageList(folder) -> List[str]:
 
 def getMatrix(folders: List[str]) -> dict:
     matrix = {
-        'media': folders,
+        'Media': folders,
     }
     language = set()
     # discover all languages
