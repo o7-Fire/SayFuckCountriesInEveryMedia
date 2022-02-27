@@ -8,8 +8,9 @@ feel free to contribute it and make a PR
 
 - make sure it runs on your machine, we don't care about other machine
 - don't commit library, cache, or anything else that is not important e.g. `node_module`, `output`, `build`, `cache`
-
-**Media**
+- language name is case-sensitive
+- for impossible implementation, place language_name/IMPOSSIBLE.txt
+  **Media**
 - `Discord` - changes between Fuck {Country} (Discord User Status/Discord Bot)
 - `Matrix` - User Status changes between Fuck {Country}
 - `Twitter` - Twitter Post Tweet about Fuck {Country}

@@ -7,6 +7,8 @@ orig = readmeFile.read_text()
 ctx = str(orig)
 finishedC = ":heavy_check_mark:"
 noneC = ":x:"
+# unsupportedC = ":question:"
+impossibleC = ":no_entry:"
 
 
 def getMediaList() -> List[str]:
@@ -15,6 +17,7 @@ def getMediaList() -> List[str]:
         # if not start with . and is a directory
         if not folder.startswith('.') and os.path.isdir(folder):
             actual.append(folder)
+    actual.sort()
     return actual
 
 
@@ -42,7 +45,11 @@ def getMatrix(folders: List[str]) -> dict:
         matrix[lang] = []
         for folder in folders:
             if lang in getLanguageList(folder):
-                matrix[lang].append(finishedC)
+                # if lang folder contain IMPOSSIBLE.txt
+                if os.path.exists(folder + '/' + lang + '/IMPOSSIBLE.txt'):
+                    matrix[lang].append(impossibleC)
+                else:
+                    matrix[lang].append(finishedC)
             else:
                 matrix[lang].append(noneC)
     return matrix
