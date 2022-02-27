@@ -17,7 +17,7 @@ feel free to contribute it and make a pr but do change the README.md
 - `Kahoot` - Fill server with bots named Fuck {Country}
 - `Stdout` - Standard output is a stream to which a program writes its output data.
 
-<script>
+<fag>
 
 | media   | C#                 | C++                | Clojure            | Crystal            | Julia              | Perl               | Powershell         | Ruby               | cobol              | crystal            | dart               | go                 | java               | javascript         | lua                | nim                | python             | rust               | swift              |
 |---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
@@ -27,4 +27,4 @@ feel free to contribute it and make a pr but do change the README.md
 | stdout  | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | twitter | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                |
 
-</script>
+</fag>
