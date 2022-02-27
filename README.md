@@ -2,7 +2,7 @@
 
 this is so revolutionary
 
-feel free to contribute it and make a pr but do change the README.md
+feel free to contribute it and make a PR
 
 # Extra Info
 
