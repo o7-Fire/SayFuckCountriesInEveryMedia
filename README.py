@@ -90,10 +90,12 @@ if ctx != orig:
 else:
     print("TABLE UP TO DATE")
     exit(0)
-
-if os.getlogin() != "runner":
-    print("Not runner, skipping git commit")
-    exit(0)
+try:
+    if os.getlogin() != "runner":
+        print("Not runner, skipping git commit")
+        exit(0)
+except:
+    pass
 
 os.system('git add README.md')
 os.system('git commit -m "Matrix Update"')
