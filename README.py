@@ -97,6 +97,8 @@ try:
 except:
     pass
 
+os.system("git config --global user.email bot@github.com")
+os.system("git config --global user.name Matrix Updater")
 os.system('git add README.md')
 os.system('git commit -m "Matrix Update"')
 os.system('git push')
