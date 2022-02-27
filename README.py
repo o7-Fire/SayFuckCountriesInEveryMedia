@@ -4,6 +4,19 @@ import re
 
 
 CWD = Path(os.getcwd())
+PRE_KOMI = '''
+python3 ../../README.py
+git add ../../README.md
+echo TABLE GENERATED
+'''
+
+
+HOOK = CWD / '.git/hooks/pre-commit'
+if HOOK.exists():
+    if PRE_KOMI not in HOOK.read_text():
+        HOOK.write_text(PRE_KOMI)
+else:
+    HOOK.write_text('#!/bin/sh\n' + PRE_KOMI)
 
 
 rm = Path('README.md')
@@ -35,7 +48,7 @@ for p in plats:
     for l in langs:
         table += '|' + ('✔️' if l in plats[p] else '❌')
     table += '\n'
-table += '\n</AUTOMATED>\n'
+table += '\n</AUTOMATED>'
 
 ctx = rm.read_text('utf-8')
 ctx = re.sub('<AUTOMATED>.+</AUTOMATED>', table, ctx, flags=re.S)
