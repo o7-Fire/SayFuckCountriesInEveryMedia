@@ -13,33 +13,30 @@ plats = {}
 
 for p in CWD.iterdir():
     if p.is_dir() and not p.name.startswith('.'):
-        plats[p.name] = []
+        _p = p.name.capitalize()
+        plats[_p] = []
         for d in p.iterdir():
             langs.add(d.name)
-            plats[p.name].append(d.name)
+            plats[_p].append(d.name)
 
-langs = list(langs)
+langs = [l.capitalize() for l in langs]
 langs.sort()
 
 table = '<AUTOMATED>\n\n'
-table += '|Media|'
+table += 'Media'
 for l in langs:
-    table += f'{l}|'
+    table += '|' + l
+table += '\n' + '-'
+for l in langs:
+    table += '|' + '-'
 table += '\n'
-table += '|-|'
-for l in langs:
-    table += '-|'
-table += '\n|'
 for p in plats:
-    table += f'{p}|'
+    table += p
     for l in langs:
-        table += '✔️' if l in plats[p] else '❌' 
-        table += '|'
+        table += '|' + ('✔️' if l in plats[p] else '❌')
     table += '\n'
-table += '\n<AUTOMATED>\n'
-
-print(table)
+table += '\n</AUTOMATED>\n'
 
 ctx = rm.read_text('utf-8')
-ctx = re.sub('<AUTOMATED>.+<AUTOMATED>', table, ctx, flags=re.S)
+ctx = re.sub('<AUTOMATED>.+</AUTOMATED>', table, ctx, flags=re.S)
 rm.write_text(ctx, 'utf-8')

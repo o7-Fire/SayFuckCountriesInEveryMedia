@@ -19,14 +19,16 @@ feel free to contribute it and make a pr but do change the README.md
 
 <AUTOMATED>
 
-|Media|C#|C++|Clojure|Crystal|Julia|Perl|Powershell|Ruby|cobol|crystal|dart|go|java|javascript|lua|nim|python|rust|swift|
-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|discord|✔️|✔️|✔️|❌|✔️|❌|❌|✔️|❌|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|✔️|
-github|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|✔️|❌|❌|
-kahoot|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|✔️|❌|❌|
-stdout|✔️|✔️|❌|❌|❌|❌|❌|❌|✔️|❌|❌|❌|✔️|✔️|❌|✔️|✔️|✔️|❌|
-twitter|✔️|❌|✔️|✔️|❌|✔️|✔️|✔️|❌|❌|❌|❌|❌|✔️|✔️|❌|✔️|❌|❌|
+Media|C#|C++|Clojure|Cobol|Crystal|Crystal|Dart|Go|Java|Javascript|Julia|Lua|Nim|Perl|Powershell|Python|Ruby|Rust|Swift
+-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
+Discord|✔️|✔️|✔️|❌|❌|❌|❌|❌|❌|❌|✔️|❌|❌|❌|❌|❌|✔️|❌|❌
+Github|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌
+Kahoot|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌
+Stdout|✔️|✔️|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌|❌
+Twitter|✔️|❌|✔️|❌|✔️|✔️|❌|❌|❌|❌|❌|❌|❌|✔️|✔️|❌|✔️|❌|❌
 
-<AUTOMATED>
+</AUTOMATED>
+
+
 
 
