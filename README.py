@@ -1,60 +1,88 @@
 import os
 import re
 from pathlib import Path
+from typing import List
 
-# the fukc ?
-CWD = Path(os.getcwd())
-PRE_KOMI = '''
-python3 ../../README.py
-git add ../../README.md
-echo TABLE GENERATED
-'''
-
-# what is this?
-HOOK = CWD / '.git/hooks/pre-commit'
-if HOOK.exists():
-    hook = HOOK.read_text()
-    if PRE_KOMI not in hook:
-        HOOK.write_text(hook + PRE_KOMI)
-else:
-    HOOK.write_text('#!/bin/sh\n' + PRE_KOMI)
-
-rm = Path('README.md')
-langs = set()
-plats = {}
-orig = rm.read_text()
+readmeFile = Path("README.md")
+orig = readmeFile.read_text()
+ctx = orig
+finishedC = ":heavy_check_mark:"
+noneC = ":x:"
 
 
-for p in CWD.iterdir():
-    if p.is_dir() and not p.name.startswith('.'):
-        _p = p.name.capitalize()
-        plats[_p] = []
-        for d in p.iterdir():
-            langs.add(d.name)
-            plats[_p].append(d.name)
+def getMediaList() -> List[str]:
+    actual = []
+    for folder in os.listdir(Path.cwd()):
+        # if not start with . and is a directory
+        if not folder.startswith('.') and os.path.isdir(folder):
+            actual.append(folder)
+    return actual
 
-langs = [l.capitalize() for l in langs]
-langs.sort()
 
-table = '<AUTOMATED>\n\n'
-table += 'Media'
-for l in langs:
-    table += '|' + l
-table += '\n' + '-'
-for l in langs:
-    table += '|' + '-'
-table += '\n'
-for p in plats:
-    table += p
-    for l in langs:
-        table += '|' + ('✔️' if l in plats[p] else '❌')
-    table += '\n'
-table += '\n</AUTOMATED>'
+def getLanguageList(folder) -> List[str]:
+    langs = []
+    for file in os.listdir(folder):
+        if os.path.isdir(folder + '/' + file):
+            langs.append(file)
+    return langs
 
-ctx = rm.read_text('utf-8')
-ctx = re.sub('<AUTOMATED>.+</AUTOMATED>', table, ctx, flags=re.S)
+
+def getMatrix(folders: List[str]) -> dict:
+    matrix = {
+        'media': folders,
+    }
+    language = set()
+    # discover all languages
+    for folder in folders:
+        langs = getLanguageList(folder)
+        language.update(langs)
+
+    for lang in language:
+        matrix[lang] = []
+        for folder in folders:
+            if lang in getLanguageList(folder):
+                matrix[lang].append(finishedC)
+            else:
+                matrix[lang].append(noneC)
+    return matrix
+
+
+def buildTable(matrix: dict) -> str:
+    colsWidth = {}
+    for col in matrix:
+        length = 0
+        for row in matrix[col]:
+            length = max(length, len(row))
+        # length = length + 2  # add 2 for the border at start and end
+        colsWidth[col] = length
+    # print head
+    tableMatrix = "|"
+    for col, width in colsWidth.items():
+        tableMatrix += " " + col + " " * (width - len(col)) + " |"
+    tableMatrix += "\n"
+    # print border
+    tableMatrix += "|"
+    for col, width in colsWidth.items():
+        width = width + 2
+        tableMatrix += "-" * width + "|"
+    tableMatrix += "\n"
+    # print body
+    rows = 0
+    for i in range(len(matrix['media'])):
+        tableMatrix += "|"
+        for col, width in colsWidth.items():
+            tableMatrix += " " + matrix[col][i] + " " * (width - len(matrix[col][i])) + " |"
+        tableMatrix += "\n"
+        rows += 1
+
+    return tableMatrix
+
+
+mat = getMatrix(getMediaList())
+table = buildTable(mat)
+ctx = re.sub(r'<AUTOMATED>.+</AUTOMATED>', '<AUTOMATED>\n' + table + '\n</AUTOMATED>', ctx)  # regex broken
 if ctx != orig:
-    rm.write_text(ctx, 'utf-8')
+    readmeFile.write_text(ctx, 'utf-8')
     print('TABLE GENERATED')
 else:
     print("TABLE UP TO DATE")
