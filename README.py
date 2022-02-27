@@ -13,8 +13,9 @@ echo TABLE GENERATED
 
 HOOK = CWD / '.git/hooks/pre-commit'
 if HOOK.exists():
-    if PRE_KOMI not in HOOK.read_text():
-        HOOK.write_text(PRE_KOMI)
+    hook = HOOK.read_text()
+    if PRE_KOMI not in hook:
+        HOOK.write_text(hook + PRE_KOMI)
 else:
     HOOK.write_text('#!/bin/sh\n' + PRE_KOMI)
 
