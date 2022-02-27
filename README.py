@@ -81,9 +81,9 @@ def buildTable(matrix: dict) -> str:
 
 mat = getMatrix(getMediaList())
 table = buildTable(mat)
-ctx = ctx.split("<script>\n")  # this is retarded
-ctx[1] = table + "\n" + "</script>"
-ctx = "<script>\n\n".join(ctx)
+ctx = ctx.split("<GENERATED>\n")  # this is retarded
+ctx[1] = table + "\n" + "</GENERATED>"
+ctx = "<GENERATED>\n\n".join(ctx)
 if ctx != orig:
     readmeFile.write_text(ctx, 'utf-8')
     print('TABLE GENERATED')
