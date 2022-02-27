@@ -1,28 +1,32 @@
 import os
-import re
+import logging
 from pathlib import Path
+import re
 
-# the fukc ?
+
+logging.basicConfig(level=logging.INFO)
+
 CWD = Path(os.getcwd())
-PRE_KOMI = '''
-python3 ../../README.py
-git add ../../README.md
-echo TABLE GENERATED
-'''
+RM = Path('README.md')
+TEXT = RM.read_text('utf-8')
 
-# what is this?
-HOOK = CWD / '.git/hooks/pre-commit'
-if HOOK.exists():
-    hook = HOOK.read_text()
-    if PRE_KOMI not in hook:
-        HOOK.write_text(hook + PRE_KOMI)
-else:
-    HOOK.write_text('#!/bin/sh\n' + PRE_KOMI)
-
-rm = Path('README.md')
 langs = set()
 plats = {}
-orig = rm.read_text()
+
+# Local machine automation hijacking script
+# Komi can't communicate
+# PRE_KOMI = '''
+# python3 ../../README.py
+# git add ../../README.md
+# echo TABLE GENERATED
+# '''
+# HOOK = CWD / '.git/hooks/pre-commit'
+# if HOOK.exists():
+#     hook = HOOK.read_text()
+#     if PRE_KOMI not in hook:
+#         HOOK.write_text(hook + PRE_KOMI)
+# else:
+#     HOOK.write_text('#!/bin/sh\n' + PRE_KOMI)
 
 
 for p in CWD.iterdir():
@@ -36,6 +40,7 @@ for p in CWD.iterdir():
 langs = [l.capitalize() for l in langs]
 langs.sort()
 
+# Generate table
 table = '<AUTOMATED>\n\n'
 table += 'Media'
 for l in langs:
@@ -51,18 +56,18 @@ for p in plats:
     table += '\n'
 table += '\n</AUTOMATED>'
 
-ctx = rm.read_text('utf-8')
-ctx = re.sub('<AUTOMATED>.+</AUTOMATED>', table, ctx, flags=re.S)
-if ctx != orig:
-    rm.write_text(ctx, 'utf-8')
-    print('TABLE GENERATED')
+# Replace section
+text = RM.read_text('utf-8')
+text = re.sub('<AUTOMATED>.+</AUTOMATED>', table, text, flags=re.S)
+if text is not TEXT:
+    logging.info("TABLE UP TO DATE")
+    exit(0)
 else:
-    print("TABLE UP TO DATE")
-    exit(0)
+    RM.write_text(text, 'utf-8')
+    logging.info('TABLE GENERATED')
 
-if os.getlogin() != "runner":
-    print("Not runner, skipping git commit")
-    exit(0)
+if os.getlogin() == "runner":
+    logging.info("Not runner, skipping git commit")
 
 os.system('git add README.md')
 os.system('git commit -m "Matrix Update"')
