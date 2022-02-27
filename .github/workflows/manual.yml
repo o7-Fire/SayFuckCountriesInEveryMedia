@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run Python Script
+      - name: Run Your Mom
         run: chmod +x README.sh && ./README.sh
 
 
