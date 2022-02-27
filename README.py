@@ -69,7 +69,7 @@ def buildTable(matrix: dict) -> str:
     tableMatrix += "\n"
     # print body
     rows = 0
-    for i in range(len(matrix['media'])):
+    for i in range(len(matrix['Media'])):
         tableMatrix += "|"
         for col, width in colsWidth.items():
             tableMatrix += " " + matrix[col][i] + " " * (width - len(matrix[col][i])) + " |"
