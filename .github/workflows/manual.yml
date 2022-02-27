@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Python Script
-        run: ./README.sh
+        run: chmod +x README.sh && ./README.sh
 
 
 
