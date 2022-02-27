@@ -30,8 +30,6 @@ mapfile -d '' LS < <(
 echo "${#LS[@]} LANGUAGE(S) IN TOTAL"
 echo
 
-shopt -u nocaseglob
-
 # Building Table
 echo "CONSTRUCTING TABLE"
 TABLE="| Media |" 
@@ -73,6 +71,8 @@ do
     TABLE+="\n"
 done
 TABLE=$(printf '%b\n' "$TABLE")
+
+shopt -u nocaseglob
 
 # Updating Table
 OLD=$(cat README.md)
