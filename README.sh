@@ -1,5 +1,4 @@
 #!/bin/bash
-shopt -s nocaseglob
 
 declare -A APS
 declare -A ALS
@@ -55,7 +54,8 @@ do
         # Check if language in media
         if [[ ${APS[$P]} == *" $L "* ]] 
         then
-            IMPC=$(cd "./$P/$L" && ls)
+            IMPC=$(shopt -s nocaseglob && 
+                cd $P && cd $L && ls)
             # Check if developers are useless
             if [[ $IMPC == *"IMPOSSIBLE.txt"* ]]
             then
@@ -71,8 +71,6 @@ do
     TABLE+="\n"
 done
 TABLE=$(printf '%b\n' "$TABLE")
-
-shopt -u nocaseglob
 
 # Updating Table
 OLD=$(cat README.md)
