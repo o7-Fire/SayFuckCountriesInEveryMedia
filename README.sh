@@ -58,7 +58,7 @@ TABLE=$(printf '%b\n' "$TABLE")
 
 # Updating Table
 OLD=$(cat README.md)
-perl -0777 -i -pe \ # Substitute
+perl -0777 -i -pe \
     "s/(<GENERATED>).*(<\/GENERATED>)/\$1\n\n$TABLE\n\n\$2/s" \
     README.md
 NEW=$(cat README.md)
