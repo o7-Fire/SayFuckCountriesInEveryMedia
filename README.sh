@@ -1,40 +1,23 @@
 #!/bin/bash
 
-declare -A APS
-declare -A ALS
+# List languages
+LS=( $(find * -maxdepth 1 -mindepth 1 -type d -printf "%f\n") )
 
-# List medias
-_PS=( $(find * -maxdepth 0 -type d) )
-echo "${#_PS[@]} MEDIA(S) FOUND:"
-mapfile -d '' _PS < <(
-    printf '%s\0' "${_PS[@]}" | sort -z)
-echo ${_PS[@]^^}
-echo
-for P in ${_PS[@]}
-do
-    # List languages in media
-    _LS=( $(cd $P && find * -maxdepth 0 -type d) )
-    echo "${#_LS[@]} LANGUAGE(S) FOUND IN ${P^^}:"
-    _LS=( ${_LS[@]^} ) # Capitalize
-    LSS=${_LS[@]} # To string
-    echo ${LSS^^}
-    APS[${P^}]=" $LSS " # Map to medias
-    # Map to languages
-    for L in ${_LS[@]} 
-    do 
-        ALS[$L]=""
-    done
+declare -A ALS
+for L in ${LS[@]}
+do 
+    ALS[${L^}]=""
 done
-# Convert to array & sort
-mapfile -d '' LS < <(
-    printf '%s\0' "${!ALS[@]}" | sort -z)
-echo "${#LS[@]} LANGUAGE(S) IN TOTAL"
-echo
+
+mapfile -d '' LS < <(printf '%s\0' "${!ALS[@]}" | sort -z)
+
+echo "${#LS[@]} LANGUAGE(S) FOUND"
+echo ${LS[@]^^}
 
 # Building Table
 echo "CONSTRUCTING TABLE"
 TABLE="| Media |" 
-# List Languages
+
 for L in ${LS[@]}
 do
     TABLE+=" $L |"
@@ -47,26 +30,24 @@ do
     TABLE+=" :-: |"
 done
 TABLE+="\n"
-# Create language checklist per media
-for P in ${!APS[@]}
+
+# Check languages per media
+PS=( $(find * -maxdepth 0 -type d) )
+for P in ${PS[@]}
 do
-    TABLE+="| $P |"
-    for L in ${LS[@]} 
+    TABLE+="| ${P^} |"
+    PLS=$(cd $P && find * -maxdepth 1)
+    PLS=${PLS[@],,}
+    for L in ${LS[@]}
     do
-        # Check if language in media
-        if [[ ${APS[$P]} == *" $L "* ]] 
+        L=${L,,}
+        if [[ $PLS == *" $L/impossible.txt "* ]] 
         then
-            A=$(find * -iname "${P,,}")
-            B=$(cd $A && find * -iname "${L,,}")
-            IMPC=$(cd "./$A/$B" && ls)
-            # Check if developers are useless
-            if [[ $IMPC == *"IMPOSSIBLE.txt"* ]]
-            then
-                TABLE+=" - "
-            else
-                TABLE+=" ✓ "
-            fi
-        else # Lazy developers
+            TABLE+=" - "
+        elif [[ $PLS == *" $L "* ]] 
+        then
+            TABLE+=" ✓ "
+        else 
             TABLE+=" X "
         fi
         TABLE+="|"
@@ -77,10 +58,8 @@ TABLE=$(printf '%b\n' "$TABLE")
 
 # Updating Table
 OLD=$(cat README.md)
-G=GENERATED
-BR="\n\n"
-perl -0777 -i -pe \
-    "s/(<$G>).*(<\/$G>)/\$1$BR$TABLE$BR\$2/s" \
+perl -0777 -i -pe \ # Substitute
+    "s/(<GENERATED>).*(<\/GENERATED>)/\$1\n\n$TABLE\n\n\$2/s" \
     README.md
 NEW=$(cat README.md)
 if [[ $NEW == $OLD ]] 
@@ -99,6 +78,7 @@ then
 fi
 
 # Push changes to git(hub)
+echo "COMMITING"
 git config --global user.email volas@mindustry.me #stolen
 git config --global user.name Not Volas
 git add README.md
