@@ -1,15 +1,12 @@
-import discord 
-import random
+from discord.ext import commands
 
-TOKEN = 'TOKEN'
+import func
 
-client = discord.Client()
+class Fuck(commands.Cog):
+    @commands.Cog.listener("on_message")
+    async def on_fuck(self, message):
+        if 'fuck' in message.content.lower():
+            await message.channel.send(func.get_country())
 
-@client.event 
-async def on_message(message):
-    if message.content.startswith('Fuck'):
-        countries = open("../../countries.txt", "r").read().split("\n")
-        country = random.choice(countries)
-        await message.channel.send(country)
-
-client.run(TOKEN)
+def setup(bot):
+    bot.add_cog(Fuck())
