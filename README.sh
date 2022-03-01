@@ -41,10 +41,10 @@ do
     for L in ${LS[@]}
     do
         L=${L,,}
-        if [[ $PLS == *" $L/impossible.txt "* ]] 
+        if [[ $PLS == *"$L/impossible.txt"* ]] 
         then
             TABLE+=" - "
-        elif [[ $PLS == *" $L "* ]] 
+        elif [[ " $PLS " == *" $L "* ]] 
         then
             TABLE+=" ✓ "
         else 
