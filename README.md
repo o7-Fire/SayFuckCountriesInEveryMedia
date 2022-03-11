@@ -22,12 +22,12 @@ feel free to contribute it and make a PR
 
 <GENERATED>
 
-| Media   | C#                 | C++                | Clojure            | Crystal            | Julia              | Perl               | Powershell         | Ruby               | cobol              | crystal            | dart               | go                 | java               | javascript         | lua                | nim                | python             | rust               | swift              |
-|---------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| discord | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| github  | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
-| kahoot  | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
-| stdout  | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
-| twitter | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| Media | C# | C++ | Clojure | Cobol | Crystal | Dart | Go | Java | Javascript | Julia | Lua | Nim | Perl | Powershell | Python | Ruby | Rust | Swift |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Discord | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | X | ✓ | ✓ | ✓ | ✓ |
+| Github | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X | X |
+| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X | X |
+| Stdout | ✓ | ✓ | X | ✓ | X | X | X | ✓ | ✓ | X | X | ✓ | X | X | ✓ | X | ✓ | X |
+| Twitter | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 
 </GENERATED>
