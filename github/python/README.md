@@ -1,1 +1,1 @@
-Fuck Bolivia
+Fuck Bosnia Herzegovina
