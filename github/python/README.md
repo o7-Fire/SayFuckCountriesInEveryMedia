@@ -1,1 +1,1 @@
-Fuck Algeria
+Fuck Andorra
