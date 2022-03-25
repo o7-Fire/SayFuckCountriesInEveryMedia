@@ -1,1 +1,1 @@
-Fuck Bosnia Herzegovina
+Fuck Botswana
