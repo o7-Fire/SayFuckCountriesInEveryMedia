@@ -1,1 +1,1 @@
-Fuck Afghanistan
+Fuck Albania
