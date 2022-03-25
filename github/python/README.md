@@ -1,1 +1,1 @@
-Fuck Australia
+Fuck Austria
