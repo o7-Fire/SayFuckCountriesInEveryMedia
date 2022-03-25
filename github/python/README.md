@@ -1,1 +1,1 @@
-Fuck Azerbaijan
+Fuck Bahamas
