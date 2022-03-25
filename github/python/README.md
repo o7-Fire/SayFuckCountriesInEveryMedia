@@ -1,1 +1,1 @@
-Fuck Barbados
+Fuck Belarus
