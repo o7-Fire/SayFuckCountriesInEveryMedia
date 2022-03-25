@@ -1,1 +1,1 @@
-Fuck Austria
+Fuck Azerbaijan
