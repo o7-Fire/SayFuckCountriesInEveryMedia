@@ -1,1 +1,1 @@
-Fuck Belarus
+Fuck Belgium
