@@ -1,1 +1,1 @@
-Fuck Albania
+Fuck Algeria
