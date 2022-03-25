@@ -1,1 +1,1 @@
-Fuck Belgium
+Fuck Belize
