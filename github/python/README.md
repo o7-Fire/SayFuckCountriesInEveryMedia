@@ -1,1 +1,1 @@
-Fuck Andorra
+Fuck Angola
