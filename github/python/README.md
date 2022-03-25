@@ -1,1 +1,1 @@
-Fuck Armenia
+Fuck Australia
