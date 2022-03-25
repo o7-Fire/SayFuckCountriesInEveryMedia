@@ -1,1 +1,1 @@
-Fuck Bangladesh
+Fuck Barbados
