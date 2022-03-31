@@ -4,6 +4,8 @@ this is so revolutionary
 
 feel free to contribute it and make a PR
 
+hey can we dockerize this
+
 # Extra Info
 
 - make sure it runs on your machine, we don't care about other machine
