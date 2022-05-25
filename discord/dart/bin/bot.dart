@@ -6,7 +6,7 @@ import 'dart:io';
 import 'dart:convert';
 
 void main() {
-  final bot = NyxxFactory.createNyxxWebsocket("ODk0Nzk4NDI0MzI1NjQwMjAy.GSm-SO.4VQik-Za6vWkQN5C6e_HLUV2Yz69vhmpfmkjfg", GatewayIntents.allUnprivileged)
+  final bot = NyxxFactory.createNyxxWebsocket("TOKEN", GatewayIntents.allUnprivileged)
     ..registerPlugin(Logging()) 
     ..registerPlugin(CliIntegration()) 
     ..registerPlugin(IgnoreExceptions()) 
