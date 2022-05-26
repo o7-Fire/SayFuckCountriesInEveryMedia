@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("dev.kord:kord-voice:0.8.0-M14")
+    implementation("dev.kord:kord-core:0.8.0-M14")
 
 }
 
