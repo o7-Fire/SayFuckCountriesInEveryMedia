@@ -1,7 +1,19 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import java.io.File;
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+suspend fun main() {
+    val kord = Kord("TOKEN")
+
+    kord.on<MessageCreateEvent> {
+        if (message.content != "Fuck") return@on
+        var read = File("countries.txt").forEachLine
+        for (line in read) {
+            message.channel.createMessage(read)
+            delay(3000)
+        }
+    }
+
+    kord.login {
+        @OptIn(PrivilegedIntent::class)
+        intents += Intent.MessageContent
+    }
 }
