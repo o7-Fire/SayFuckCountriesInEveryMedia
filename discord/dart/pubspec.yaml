@@ -1,0 +1,11 @@
+name: bot
+description: Fuck Countries
+
+environment:
+  sdk: '>=2.14.2 <3.0.0'
+
+dependencies:
+  nyxx: ^3.0.0
+  
+dev_dependencies:
+  lints: ^1.0.0

@@ -5,14 +5,17 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types: [closed]
 
 jobs:
   update_readme:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run Python Script
-        run: python3 README.py
+      - name: Run Your Mom
+        run: chmod +x README.sh && ./README.sh
+        # run: python3 README.py
 
 
 
