@@ -1,4 +1,4 @@
 File.readlines('countries.txt').each do |line|
-  puts(line)
+  puts("Fuck" + line)
   sleep(1)
 end
