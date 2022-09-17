@@ -10,7 +10,8 @@ function on_message_create(c::Client, event::MessageCreate)
 end
 
 function main()
-    c = Client(ENV["TOKEN"])
+    c = Client("TOKEN")
+   #c = Client(ENV["TOKEN"])
     open(c)
     add_handler!(c, MessageCreate, on_message_create; tag=:Fuck)
     return c
