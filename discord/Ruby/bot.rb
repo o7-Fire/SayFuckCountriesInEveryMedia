@@ -3,9 +3,9 @@ require 'discordrb'
 bot = Discordrb::Bot.new token: 'TOKEN'
 
 bot.message(with_text: 'Fuck') do |event|
-  f = File.open("countries.txt", "r")
-  f.each_line do |line|
+  File.readlines('countries.txt').each do |line|
   event.respond 'Fuck' line
+  sleep(1)
 end
 
 bot.run
