@@ -26,7 +26,8 @@ void on_message(struct discord *client, const struct discord_message *msg) {
     
   file = fopen("countries.txt", "r");
   while(fgets(buffer, bufferLength, file)) {
-    struct discord_create_message params = { .content = buffer };
+    struct discord_create_message params = { .content = "Fuck" + String(buffer) }; // untested, not bothering with wsl
+ // struct discord_create_message params = { .content = buffer };
     discord_create_message(client, msg->channel_id, &params, NULL);
     delay(3);
   }
