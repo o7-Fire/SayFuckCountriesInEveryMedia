@@ -5,6 +5,6 @@
 
 foreach($line in Get-Content .\countries.txt) {
     if($line -match $regex){
-        Publish-Tweet -TweetText "Fuck" + $line
+        Publish-Tweet -TweetText "Fuck" $line
     }
 }
