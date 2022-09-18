@@ -10,8 +10,10 @@ hey can we dockerize this
 
 - make sure it runs on your machine, we don't care about other machine
 - don't commit library, cache, or anything else that is not important e.g. `node_module`, `output`, `build`, `cache`
-- language name is case-sensitive
-- for impossible implementation, place `language_name/IMPOSSIBLE.txt` with the reason inside it
+- file path **IS AND SHOULD BE** case-sensitive
+- for impossible implementation (or you're lazy),
+ create `platform/language/IMPOSSIBLE.txt` with
+ reason in it ~that we won't be reading~
 
 # Media
 
