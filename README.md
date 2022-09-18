@@ -28,7 +28,7 @@ hey can we dockerize this
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | Discord | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Github | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | ✓ | X | X | X |
-| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X | X |
+| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | - | ✓ | X | X | X |
 | Stdout | X | ✓ | ✓ | ✓ | ✓ | X | X | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X |
 | Twitter | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 
