@@ -37,14 +37,15 @@ for P in ${PS[@]}
 do
     TABLE+="| ${P^} |"
     PLS=$(cd $P && find * -maxdepth 1)
-    PLS=${PLS[@],,}
+    PLS=${PLS[@]}
+    shopt -s nocasematch
     for L in ${LS[@]}
     do
-        M=${L,,}
-        if [[ $PLS == *"$M/impossible.txt"* ]] 
+        if [[ $PLS =~ .*($L/impossible\.txt).* ]] 
         then # for now
-            TABLE+=" [ - ]($P\/$L\/IMPOSSIBLE.txt)"
-        elif [[ " $PLS " == *" $M "* ]] 
+            PA=${BASH_REMATCH[1]/\//\\/}
+            TABLE+=" [ - ]($P\/$PA) "
+        elif [[ " $PLS " == *" $L "* ]] 
         then
             TABLE+=" ✓ "
         else 
@@ -52,6 +53,7 @@ do
         fi
         TABLE+="|"
     done
+    shopt -u nocasematch
     TABLE+="\n"
 done
 TABLE=$(printf '%b\n' "$TABLE")
