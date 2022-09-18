@@ -40,11 +40,11 @@ do
     PLS=${PLS[@],,}
     for L in ${LS[@]}
     do
-        L=${L,,}
-        if [[ $PLS == *"$L/impossible.txt"* ]] 
-        then
-            TABLE+=" - "
-        elif [[ " $PLS " == *" $L "* ]] 
+        M=${L,,}
+        if [[ $PLS == *"$M/impossible.txt"* ]] 
+        then # for now
+            TABLE+=" [ - ]($P\/$L\/IMPOSSIBLE.txt)"
+        elif [[ " $PLS " == *" $M "* ]] 
         then
             TABLE+=" ✓ "
         else 
