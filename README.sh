@@ -79,8 +79,8 @@ fi
 
 # Push changes to git(hub)
 echo "COMMITING"
-git config --global user.email volas@mindustry.me #stolen
-git config --global user.name Not Volas
+git config --global user.email 89518595+NexitySecond@users.noreply.github.com #stolen
+git config --global user.name Not Nexity
 git add README.md
 git commit -m "Update README.md"
 git push
