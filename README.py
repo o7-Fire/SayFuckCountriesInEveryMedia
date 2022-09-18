@@ -47,8 +47,8 @@ def getMatrix(folders: List[str]) -> dict:
             if lang in getLanguageList(folder):
                 # if lang folder contain IMPOSSIBLE.txt
                 impossibleTxt = folder + '/' + lang + '/IMPOSSIBLE.txt'
-                if os.path.exists('[ ' + impossibleTxt + ' ]('+impossibleTxt+")"):#enable hyperlink
-                    matrix[lang].append(impossibleC)
+                if os.path.exists(impossibleTxt):#enable hyperlink
+                    matrix[lang].append("[ " + impossibleC + " ]("+impossibleTxt+")")
                 else:
                     matrix[lang].append(finishedC)
             else:
