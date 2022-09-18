@@ -29,7 +29,7 @@ hey can we dockerize this
 | discord | ✓ | ✓ | ✓ | [ - ](discord/Cobol/IMPOSSIBLE.txt) | X | ✓ | ✓ | X | ✓                                       | ✓ | ✓ | X | X | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | github  | X | X | X | X                                   | X | X | X | X | ✓                                       | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X |
 | kahoot  | X | X | X | X                                   | X | X | X | X | [ - ](kahoot/Powershell/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X |
-| stdout  | ✓ | ✓ | X | X                                   | X | X | X | X | ✓                                       | ✓ | X | ✓ | ✓ | X | X | X | ✓ | ✓ | X | ✓ | ✓ | ✓ | X |
+| stdout  | ✓ | ✓ | X | X                                   | X | X | X | X | ✓                                       | ✓ | X | ✓ | ✓ | X | ✓ | X | ✓ | ✓ | X | ✓ | ✓ | ✓ | X |
 | twitter | ✓ | X | ✓ | X                                   | ✓ | X | X | ✓ | ✓                                       | ✓ | X | X | X | X | X | X | X | ✓ | ✓ | X | ✓ | X | X |
 
 </GENERATED>
