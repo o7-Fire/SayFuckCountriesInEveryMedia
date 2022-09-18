@@ -24,12 +24,12 @@ hey can we dockerize this
 
 <GENERATED>
 
-| Media | C | C# | C++ | Clojure | Cobol | Crystal | Dart | Go | Java | Javascript | Julia | Kotlin | Lua | Nim | Perl | Powershell | Python | Ruby | Rust | Swift |
-| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Discord | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Github | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | ✓ | X | X | X |
-| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | - | ✓ | X | X | X |
-| Stdout | X | ✓ | ✓ | ✓ | ✓ | X | X | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X |
-| Twitter | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
+| Media   | C# | C++ | Clojure | Cobol                               | Crystal | Julia | Kotlin | Perl | Powershell                              | Ruby | c | clojure | cobol | crystal | dart | go | java | javascript | lua | nim | python | rust | swift |
+|---------|---|---|---|-------------------------------------|---|---|---|---|-----------------------------------------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| discord | ✓ | ✓ | ✓ | [ - ](discord/Cobol/IMPOSSIBLE.txt) | X | ✓ | ✓ | X | ✓                                       | ✓ | ✓ | X | X | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| github  | X | X | X | X                                   | X | X | X | X | ✓                                       | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X |
+| kahoot  | X | X | X | X                                   | X | X | X | X | [ - ](kahoot/Powershell/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | X | X | X | ✓ | X | X |
+| stdout  | ✓ | ✓ | X | X                                   | X | X | X | X | ✓                                       | ✓ | X | ✓ | ✓ | X | X | X | ✓ | ✓ | X | ✓ | ✓ | ✓ | X |
+| twitter | ✓ | X | ✓ | X                                   | ✓ | X | X | ✓ | ✓                                       | ✓ | X | X | X | X | X | X | X | ✓ | ✓ | X | ✓ | X | X |
 
 </GENERATED>
