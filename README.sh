@@ -41,7 +41,7 @@ do
     for L in ${LS[@]}
     do
         L=${L,,}
-        if [[ $PLS == *"$L/IMPOSSIBLE.txt"* ]] 
+        if [[ $PLS == *"$L/impossible.txt"* ]] 
         then
             TABLE+=" - "
         elif [[ " $PLS " == *" $L "* ]] 
