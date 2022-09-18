@@ -5,10 +5,10 @@ from typing import List
 readmeFile = Path("README.md")
 orig = readmeFile.read_text()
 ctx = str(orig)
-finishedC = ":heavy_check_mark:"
-noneC = ":x:"
+finishedC = "✓"
+noneC = "X"
 # unsupportedC = ":question:"
-impossibleC = ":no_entry:"
+impossibleC = "-"
 
 
 def getMediaList() -> List[str]:
