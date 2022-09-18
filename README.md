@@ -11,7 +11,7 @@ hey can we dockerize this
 - make sure it runs on your machine, we don't care about other machine
 - don't commit library, cache, or anything else that is not important e.g. `node_module`, `output`, `build`, `cache`
 - language name is case-sensitive
-- for impossible implementation, place `language_name/IMPOSSIBLE.txt`
+
 
 # Media
 
@@ -33,3 +33,5 @@ hey can we dockerize this
 | Twitter | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 
 </GENERATED>
+
+
