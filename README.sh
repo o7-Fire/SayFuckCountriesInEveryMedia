@@ -42,9 +42,8 @@ do
     for L in ${LS[@]}
     do
         if [[ $PLS =~ .*($L/impossible\.txt).* ]] 
-        then # for now
-            PA=${BASH_REMATCH[1]/\//\\/}
-            TABLE+=" [ - ]($P\/$PA) "
+        then
+            TABLE+=" [ - ]($P\/${BASH_REMATCH[1]/\//\\/}) "
         elif [[ " $PLS " == *" $L "* ]] 
         then
             TABLE+=" ✓ "
