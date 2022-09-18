@@ -43,8 +43,7 @@ do
         L=${L,,}
         if [[ $PLS == *"$L/impossible.txt"* ]] 
         then
-            #TABLE+=" - "
-            TABLE+=" [ - ]($P/$PLS) "
+            TABLE+=" - "
         elif [[ " $PLS " == *" $L "* ]] 
         then
             TABLE+=" ✓ "
