@@ -1,4 +1,4 @@
-'''
+''''#!/bin/bash
 # List languages
 LS=( $(find * -maxdepth 1 -mindepth 1 -type d -printf "%f\n") )
 
