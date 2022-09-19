@@ -28,9 +28,9 @@ hey can we dockerize this
 
 | Media | C | C# | C++ | Clojure | Cobol | Crystal | Dart | Go | Java | Javascript | Julia | Kotlin | Lua | Nim | Perl | Powershell | Python | Ruby | Rust | Swift |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Discord | ✓ | ✓ | ✓ | ✓ | [ - ](discord/Cobol/IMPOSSIBLE.txt) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Discord | ✓ | ✓ | ✓ | ✓ | <table><tr><td><a href="discord/Cobol/IMPOSSIBLE.txt" style="display:block;">&nbsp;</a></td></tr></table> | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Github | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | ✓ | X | X | X |
-| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | [ - ](kahoot/Powershell/IMPOSSIBLE.txt) | ✓ | X | X | X |
+| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | <table><tr><td><a href="kahoot/Powershell/IMPOSSIBLE.txt" style="display:block;">&nbsp;</a></td></tr></table> | ✓ | X | X | X |
 | Stdout | X | ✓ | ✓ | ✓ | ✓ | X | ✓ | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X |
 | Twitter | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 
