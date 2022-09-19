@@ -5,3 +5,4 @@ if let path = Bundle.main.path(forResource: file, ofType: "txt"){
         let myStrings = data.components(.split { $0.IsNewline })
         let text = myStrings.joined(separator: "\n")
         print("Fuck" + text)
+     // sleep(2) i am not install MacOS for this
