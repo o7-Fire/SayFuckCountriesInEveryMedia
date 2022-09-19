@@ -3,6 +3,7 @@
 - [X] Complete Ruby
 - [ ] Complete Rust
 - [ ] Complete Dart
+- [ ] Assigning Kotlin for @Itzbenz
 - [ ] Complete Crystal
 - [ ] Complete Clojure
 - [ ] Add loops for certain languages
@@ -11,5 +12,4 @@
 - [ ] Add bash support (wtf) 
 - [ ] Does @shadow01148 scripts work? 
 
-Completed:
 
