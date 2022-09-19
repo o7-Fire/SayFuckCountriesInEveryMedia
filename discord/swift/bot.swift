@@ -15,6 +15,7 @@ bot.on(.messageCreate) { data in
         let myStrings = data.components(.split { $0.IsNewline })
         let text = myStrings.joined(separator: "\n")
         msg.reply(with: "Fuck" + text)
+     // sleep(2) i am not install MacOS for this
     }
 }
 
