@@ -1,6 +1,6 @@
 # it better to keep your priority straight
 
-- [ ] Complete Ruby
+- [X] Complete Ruby
 - [ ] Complete Rust
 - [ ] Complete Dart
 - [ ] Complete Crystal
