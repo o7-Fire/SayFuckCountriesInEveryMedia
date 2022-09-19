@@ -6,12 +6,12 @@
 - [ ] Complete Rust
 - [ ] Complete Dart
 - [ ] Assigning Kotlin for @Itzbenz
-- [ ] Complete Crystal
+- [X] Complete Crystal
 - [ ] Complete Clojure
-- [ ] Add loops for certain languages
-- [ ] Force gary to fix his shit
+- [X] Add cooldowns for certain languages
+- [X] Force gary to fix his shit
 - [ ] Perl
-- [ ] Add bash support (wtf) 
-- [ ] Does @shadow01148 scripts work? 
+- [X] Add bash support (wtf) 
+- [X] Does @shadow01148 scripts work? (Indecisive)
 
 
