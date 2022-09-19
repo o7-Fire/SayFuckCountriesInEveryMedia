@@ -43,7 +43,7 @@ do
     do
         if [[ $PLS =~ .*($L/impossible\.txt).* ]] 
         then
-            TABLE+=" <table><tr><td><a href=\"$P\/${BASH_REMATCH[1]/\//\\/}\" style=\"display:block;\">&nbsp;<\/a><\/td><\/tr><\/table> "
+            TABLE+=" [<div>-<\/div>]($P\/${BASH_REMATCH[1]/\//\\/}) "
         elif [[ $PLS == *$L/* ]] 
         then
             TABLE+=" ✓ "
