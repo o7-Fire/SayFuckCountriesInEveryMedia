@@ -9,6 +9,7 @@ client.on_message_create do |payload|
     File.each_line("countries.txt") do |line|
     puts line
     client.create_message(payload.channel_id, "Fuck #{line}")
+    sleep 3.seconds
     end
   end
 end
