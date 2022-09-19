@@ -1,4 +1,6 @@
-
+''''./README.sh
+exit
+'''
 import os
 from pathlib import Path
 from typing import List
