@@ -30,7 +30,7 @@ hey can we dockerize this
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | Discord | ✓ | ✓ | ✓ | ✓ | [ - ](discord/Cobol/IMPOSSIBLE.txt) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Github | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | ✓ | ✓ | ✓ | X | X |
-| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | [ - ](kahoot/Powershell/IMPOSSIBLE.txt) | ✓ | X | X | X |
+| Kahoot | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | [ - ](kahoot/Powershell/IMPOSSIBLE.txt) | ✓ | [ - ](kahoot/Ruby/IMPOSSIBLE.txt) | X | X |
 | Stdout | X | ✓ | ✓ | ✓ | ✓ | X | ✓ | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X |
 | Twitter | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 
