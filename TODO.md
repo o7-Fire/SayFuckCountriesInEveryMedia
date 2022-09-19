@@ -1,5 +1,7 @@
 # it better to keep your priority straight
 
+- main focus is on stdout
+
 - [X] Complete Ruby
 - [ ] Complete Rust
 - [ ] Complete Dart
