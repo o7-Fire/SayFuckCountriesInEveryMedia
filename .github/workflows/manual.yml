@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Your Mom
-        run: chmod +x README.sh README.py && ./README.py
+        run: chmod +x README.sh && ./README.sh
         #run: python3 README
 
 
