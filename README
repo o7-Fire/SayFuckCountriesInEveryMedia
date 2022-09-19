@@ -1,4 +1,5 @@
-''''#!/bin/bash
+#!/bin/bash
+''''echo START
 # List languages
 LS=( $(find * -maxdepth 1 -mindepth 1 -type d -printf "%f\n") )
 
@@ -43,7 +44,7 @@ do
         if [[ $PLS =~ .*($L/impossible\.txt).* ]] 
         then
             TABLE+=" [ - ]($P\/${BASH_REMATCH[1]/\//\\/}) "
-        elif [[ " $PLS " == *" $L "* ]] 
+        elif [[ $PLS == *$L/* ]] 
         then
             TABLE+=" ✓ "
         else 
