@@ -6,6 +6,8 @@ feel free to contribute it and make a PR
 
 hey can we dockerize this
 
+cant believe i need sh file for every bash command i make
+
 # Extra Info
 
 - make sure it runs on your machine, we don't care about other machine
