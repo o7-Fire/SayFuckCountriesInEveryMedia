@@ -14,7 +14,7 @@ hey can we dockerize this
 - for impossible implementation (or you're lazy),
  create `platform/language/IMPOSSIBLE.txt` with
  reason in it ~that we won't be reading~
-- Provide a technical reason why it's impossible 
+- Provide a technical reason why it's impossible
 
 # Media
 
