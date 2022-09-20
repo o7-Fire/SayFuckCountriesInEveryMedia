@@ -3,7 +3,7 @@ import os
 #how lol
 var countries = @["Russia", "USA", "Canada", "Australia"]
 try:
-  countries = splitLines(strip(readFile("../../countries.txt")))
+  countries = splitLines(strip(readFile("countries.txt")))
 except:
   let a = "lol how i do pass"
 try:
