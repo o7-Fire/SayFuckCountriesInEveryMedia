@@ -1,5 +1,5 @@
 #!/bin/bash
-''''echo START
+echo START
 # List languages
 LS=( $(find * -maxdepth 1 -mindepth 1 -type d -printf "%f\n") )
 
@@ -85,6 +85,3 @@ git config --global user.name Not Volas
 git add README.md
 git commit -m "Update README.md"
 git push
-
-exit
-'''
