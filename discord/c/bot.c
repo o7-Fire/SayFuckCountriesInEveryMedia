@@ -1,7 +1,9 @@
 #include <time.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <concord/log.h>
+#include <unistd.h>
 #include <concord/discord.h>
 
 #define bufferLength 255
@@ -9,12 +11,12 @@
 FILE* file;
 char buffer[bufferLength];
 
-void delay(int seconds)
-{
-    int mili_seconds = 3000 * seconds;
-    clock_t start_time = clock();
-    while (clock() < start_time + mili_seconds)
-    ;
+
+char* FUCKYOU(const char *buffer) {
+  char *result = malloc(strlen("Fuck ") + strlen(buffer) + 1);
+  strcpy(result, "Fuck ");
+  strcat(result, buffer);
+  return result;
 }
  
 void on_ready(struct discord *client, const struct discord_ready *event) {
@@ -27,10 +29,9 @@ void on_message(struct discord *client, const struct discord_message *event) {
     
   file = fopen("countries.txt", "r");
   while(fgets(buffer, bufferLength, file)) {
-  //  struct discord_create_message params = { .content = strcat("Fuck", buffer)}; untested, not bothering with wsl
-    struct discord_create_message params = { .content = buffer };
+    struct discord_create_message params = { .content = FUCKYOU(buffer) };
     discord_create_message(client, event->channel_id, &params, NULL);
-    delay(3);
+    sleep(3);
   }
 
   fclose(file);
