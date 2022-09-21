@@ -4,5 +4,5 @@ make && make install
 
 # Issues
 
-Segmentation fault (core dumped) on activation
+No Issues
 
