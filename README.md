@@ -36,7 +36,7 @@ cant believe i need sh file for every bash command i make
 | Discord | ✓ | ✓ | ✓ | ✓ | ✓ | [<div>-</div>](discord/Cobol/IMPOSSIBLE.txt) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Github | [<div>-</div>](github/Bash/IMPOSSIBLE.txt) | X | X | X | X | X | [<div>-</div>](github/Crystal/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | X | ✓ | ✓ | ✓ | X | X |
 | Kahoot | [<div>-</div>](kahoot/Bash/IMPOSSIBLE.txt) | X | X | X | X | X | [<div>-</div>](kahoot/Crystal/IMPOSSIBLE.txt) | [<div>-</div>](kahoot/Dart/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | [<div>-</div>](kahoot/Powershell/IMPOSSIBLE.txt) | ✓ | [<div>-</div>](kahoot/Ruby/IMPOSSIBLE.txt) | X | [<div>-</div>](kahoot/Swift/IMPOSSIBLE.txt) |
-| Stdout | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Stdout | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Twitter | ✓ | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
 
 </GENERATED>
