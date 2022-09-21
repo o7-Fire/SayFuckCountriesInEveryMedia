@@ -1,7 +1,8 @@
-build concord first 
+BUILD CONCORD FIRST
+
+make && make install
 
 # Issues
 
-it only says the country
+Segmentation fault (core dumped) on activation
 
-your problem now
