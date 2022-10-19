@@ -5,6 +5,23 @@ Use `{language_framework_language}` to say fuck `{country}` on `{platform}`
 
 You are free to contribute and make a PR.
 
+## TODO
+- [ ] Dockerize the repository
+
+## Functions
+- `Discord` - changes between Fuck {Country} (Discord User Status/Discord Bot)
+- `Matrix` - User Status changes between Fuck {Country}
+- `Twitter` - Tweet about Fuck {Country}
+- `Github` - Markdown file content
+- `Kahoot` - Fill server with bots named Fuck {Country}
+- `Stdout` - Standard output is a stream to which a program writes its output data.
+
+## Info
+- Make sure it runs on your machine, we don't care about other machine.
+- Do not commit library, cache, or anything else that is not important e.g. `node_module`,`output`, `build`, `cache`.
+- File path should follow the format above.
+- For impossible implementation (or you're lazy), create `platform/language/IMPOSSIBLE.txt`. **PROVIDE** a technical reason why it's impossible
+
 <details open>
 <summary>Languages Included</summary>
 <GENERATED>
@@ -110,22 +127,6 @@ git commit -m "Update README.md"
 git push
 #-->
 
-## TODO
-- [ ] Dockerize the repository
-
-## Functions
-- `Discord` - changes between Fuck {Country} (Discord User Status/Discord Bot)
-- `Matrix` - User Status changes between Fuck {Country}
-- `Twitter` - Tweet about Fuck {Country}
-- `Github` - Markdown file content
-- `Kahoot` - Fill server with bots named Fuck {Country}
-- `Stdout` - Standard output is a stream to which a program writes its output data.
-
-## Info
-- Make sure it runs on your machine, we don't care about other machine.
-- Do not commit library, cache, or anything else that is not important e.g. `node_module`,`output`, `build`, `cache`.
-- File path should follow the format above.
-- For impossible implementation (or you're lazy), create `platform/language/IMPOSSIBLE.txt`. **PROVIDE** a technical reason why it's impossible
 
 
 
