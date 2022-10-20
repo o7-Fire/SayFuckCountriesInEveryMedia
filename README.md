@@ -3,7 +3,7 @@
 
 Use `{language_framework_language}` to say fuck `{country}` on `{platform}`
 
-You are free to contribute and make a PR.
+I, Robert would be welcome if you contribute and make a PR.
 
 ## TODO
 - [ ] Dockerize the repository
