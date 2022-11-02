@@ -5,6 +5,21 @@ Use `{language_framework_language}` to say fuck `{country}` on `{platform}`
 
 I, Robert would be welcome if you contribute and make a PR.
 
+<details open>
+<summary>Languages Included</summary>
+<GENERATED>
+
+| Media | Bash | C | C# | C++ | Clojure | Cobol | Crystal | Dart | Go | Java | Javascript | Julia | Kotlin | Lua | Nim | Perl | Powershell | Python | Ruby | Rust | Swift |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Discord | ✓ | ✓ | ✓ | ✓ | ✓ | [<div>-</div>](discord/Cobol/IMPOSSIBLE.txt) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Github | [<div>-</div>](github/Bash/IMPOSSIBLE.txt) | X | X | X | X | X | [<div>-</div>](github/Crystal/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | X | ✓ | ✓ | ✓ | X | X |
+| Kahoot | [<div>-</div>](kahoot/Bash/IMPOSSIBLE.txt) | X | X | X | X | X | [<div>-</div>](kahoot/Crystal/IMPOSSIBLE.txt) | [<div>-</div>](kahoot/Dart/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | [<div>-</div>](kahoot/Powershell/IMPOSSIBLE.txt) | ✓ | [<div>-</div>](kahoot/Ruby/IMPOSSIBLE.txt) | X | [<div>-</div>](kahoot/Swift/IMPOSSIBLE.txt) |
+| Stdout | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Twitter | ✓ | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
+
+</GENERATED>
+</details>
+
 ## TODO
 - [ ] Dockerize the repository
 
@@ -21,21 +36,6 @@ I, Robert would be welcome if you contribute and make a PR.
 - Do not commit library, cache, or anything else that is not important e.g. `node_module`,`output`, `build`, `cache`.
 - File path should follow the format above.
 - For impossible implementation (or you're lazy), create `platform/language/IMPOSSIBLE.txt`. **PROVIDE** a technical reason why it's impossible
-
-<details open>
-<summary>Languages Included</summary>
-<GENERATED>
-
-| Media | Bash | C | C# | C++ | Clojure | Cobol | Crystal | Dart | Go | Java | Javascript | Julia | Kotlin | Lua | Nim | Perl | Powershell | Python | Ruby | Rust | Swift |
-| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Discord | ✓ | ✓ | ✓ | ✓ | ✓ | [<div>-</div>](discord/Cobol/IMPOSSIBLE.txt) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Github | [<div>-</div>](github/Bash/IMPOSSIBLE.txt) | X | X | X | X | X | [<div>-</div>](github/Crystal/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | X | ✓ | ✓ | ✓ | X | X |
-| Kahoot | [<div>-</div>](kahoot/Bash/IMPOSSIBLE.txt) | X | X | X | X | X | [<div>-</div>](kahoot/Crystal/IMPOSSIBLE.txt) | [<div>-</div>](kahoot/Dart/IMPOSSIBLE.txt) | X | X | X | X | X | X | X | X | [<div>-</div>](kahoot/Powershell/IMPOSSIBLE.txt) | ✓ | [<div>-</div>](kahoot/Ruby/IMPOSSIBLE.txt) | X | [<div>-</div>](kahoot/Swift/IMPOSSIBLE.txt) |
-| Stdout | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | X | ✓ | ✓ | X | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Twitter | ✓ | X | ✓ | X | ✓ | X | ✓ | X | X | X | ✓ | X | X | ✓ | X | ✓ | ✓ | ✓ | ✓ | X | X |
-
-</GENERATED>
-</details>
 
 <!--
 #!/bin/bash
