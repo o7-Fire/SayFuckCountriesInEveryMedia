@@ -1,8 +1,5 @@
-# Instructions
-run `dart pub get` in your directory
+# Dockerized™ 
 
-edit `bot.dart`, put your token in TOKEN
+`docker build . --build-arg TOKEN=TOKEN --no-cache` 
 
-`dart run`
 
-this the second time i accidentally leaked my token
