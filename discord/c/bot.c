@@ -40,7 +40,7 @@ void on_message(struct discord *client, const struct discord_message *event) {
 
  
 int main(void) {
-  struct discord *client = discord_init("TOKEN");
+  struct discord *client = discord_init(getenv("TOKEN"));
   discord_add_intents(client, DISCORD_GATEWAY_MESSAGE_CONTENT);
   discord_set_on_ready(client, &on_ready);
   discord_set_on_message_create(client, &on_message);
