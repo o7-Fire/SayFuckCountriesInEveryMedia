@@ -1,12 +1,11 @@
-// https://github.com/nyxx-discord/nyxx/
-
 import "package:nyxx/nyxx.dart";
 import 'dart:async';
-import 'dart:io';
+import 'dart:io' show Platform;
 import 'dart:convert';
 
 void main() {
-  final bot = NyxxFactory.createNyxxWebsocket("TOKEN", GatewayIntents.allUnprivileged)
+  Map<String, String> env = Platform.environment;
+  final bot = NyxxFactory.createNyxxWebsocket(env["TOKEN"], GatewayIntents.allUnprivileged)
     ..registerPlugin(Logging()) 
     ..registerPlugin(CliIntegration()) 
     ..registerPlugin(IgnoreExceptions()) 
