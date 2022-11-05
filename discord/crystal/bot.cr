@@ -1,6 +1,6 @@
 require "../src/discordcr" # shard.yml
 
-client = Discord::Client.new(token: "TOKEN", client_id:  CLIENTID_u64);
+client = Discord::Client.new(token: ENV["TOKEN"], client_id:  CLIENTID_u64);
 cache = Discord::Cache.new(client)
 client.cache = cache
 
