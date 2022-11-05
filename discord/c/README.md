@@ -1,6 +1,6 @@
-BUILD CONCORD FIRST
+# Dockerized™ 
 
-make && make install
+`docker build . --build-arg TOKEN=TOKEN --no-cache` 
 
 # Issues
 
