@@ -1,8 +1,8 @@
 # nimble install dimscord
 
-import dimscord, asyncdispatch, times, options
+import dimscord, asyncdispatch, times, options, os
 
-let discord = newDiscordClient("TOKEN")
+let discord = newDiscordClient(getEnv("TOKEN"))
 
 
 proc messageCreate(s: Shard, m: Message) {.event(discord).} =

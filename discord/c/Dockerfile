@@ -1,6 +1,5 @@
 FROM gcc:latest
-COPY bot.c bot.c
-COPY Makefile Makefile
+COPY . .
 RUN apt update && apt install -y libcurl4-openssl-dev
 RUN git clone https://github.com/cogmasters/concord.git
 WORKDIR /concord

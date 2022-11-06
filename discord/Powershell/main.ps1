@@ -1,6 +1,6 @@
 Import-Module PSDiscord # Install-Module PSDiscord
 
-$WeebhookUrl = 'WEBHOOKURL' # only use weebhook
+$WeebhookUrl = $Env:WEEBHOOK
 
 foreach($line in Get-Content .\countries.txt) {
     if($line -match $regex){
